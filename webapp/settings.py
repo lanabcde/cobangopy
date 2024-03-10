@@ -144,6 +144,9 @@ STATIC_URL = "static/"
 STATICFILES_DIRS = os.path.join(BASE_DIR, 'static/'),
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static/')
 
+DEFAULT_FILE_STORAGE = 'storages.backends.gcloud.GoogleCloudStorage'
+GS_BUCKET_NAME = 'media_ngopy'
+
 MEDIA_URL = 'media/'
 MEDIA_ROOT = 'var/task/media/'
 
