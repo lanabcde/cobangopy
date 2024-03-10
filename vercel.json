@@ -21,7 +21,7 @@
       },
       {
         "src": "/media/(.*)", 
-        "dest": "/var/task/media/$1"
+        "dest": "/tmp/$1"
       },
       {
         "src": "/(.*)",
