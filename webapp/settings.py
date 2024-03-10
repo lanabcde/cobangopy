@@ -148,7 +148,7 @@ DEFAULT_FILE_STORAGE = 'storages.backends.gcloud.GoogleCloudStorage'
 GS_BUCKET_NAME = 'media_ngopy'
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = '/var/task/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 
 # Default primary key field type
