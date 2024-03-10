@@ -21,7 +21,7 @@
       },
       {
         "src": "/media/(.*)", 
-        "dest": "/var/task/media/$1" 
+        "dest": "https://storage.googleapis.com/media_ngopy/$1"
       },
       {
         "src": "/(.*)",
