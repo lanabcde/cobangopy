@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
       {
-        "src": "myweb/wsgi.py",
+        "src": "webapp/wsgi.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "45mb", "runtime": "python3.9" }
       },
@@ -20,8 +20,12 @@
         "dest": "/static/$1"
       },
       {
+        "src": "/media/(.*)", 
+        "dest": "/var/task/media/$1" 
+      },
+      {
         "src": "/(.*)",
-        "dest": "myweb/wsgi.py"
+        "dest": "webapp/wsgi.py"
       }
     ]
   }
